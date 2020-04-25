@@ -1,0 +1,47 @@
+##########  ############################################################
+##  Announce when people come or go.
+######################################################################
+- alias: 'People Greeting'
+
+  trigger:
+    - platform: state
+      entity_id:
+        - device_tracker.iphone
+        - device_tracker.sm_g973u
+      from: 'not_home'
+      to: 'home'
+
+  action:
+    - wait_template: >-
+        {{ states.binary_sensor.wyzesense_778e1096.state == 'on' }}
+    - service: script.speech_engine
+      data_template:
+        personarriving: >
+          {% set person = trigger.entity_id.split('.')[1]|replace('_', ' ')%}
+          {%- macro greeting_sentence(person) -%}
+          {{ [
+          "Welcome back home " ~ person,
+          "Guess who is home?" ~ person +" is!",
+          person + " is now in the house.",
+          "Welcome Home " ~ person + ".  We have missed you. Or at least Linda did.",
+          "Our home is now complete, Rest your head and relax your feet! Welcome Back " ~ person,
+          "Life is like a song, you’re back where you belong. Welcome home " ~ person,
+          "Hey there " ~ person + " Welcome Home!",
+          "Knock Knock. Who is There? "   ~ person +" is!",
+          person + " can not hide from the system. Welcome home.",
+          person ~ "! You are home!",
+          "I know a secret! "  ~ person +" is home!",
+          "Take note Linda! "  ~ person +" is home.",
+          "I am sensing a disturbance in the force. "  ~ person +" must be home!",
+          "And the house becomes a home. Welcome back " ~ person,
+          person + " is now here.  Hash tag Welcome Home.",
+          person + " is now here.  Hash tag Home.",
+          person + " is now here.  Hash tag Smart Home.",
+          "Just a quick announcement. " ~ person +" has arrived!",
+          "Pardon the interruption but " ~ person +" is home!",
+          "My systems are picking up the presence of additional humans. " ~ person +" has been identified as home.",
+          "Welcome home "~person~"! It is nice to see you again! Let me turn on the lights. ",
+          "It looks like "~person~" is finally home! I will get the house ready for you. "
+          ] | random }}
+          {%- endmacro -%}
+          {{greeting_sentence(person)}}

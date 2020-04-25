@@ -1,0 +1,12 @@
+.cloud
+.storage 
+.google.token
+.HA_VERSION
+.shopping_list.json
+.uuid
+*.db
+*.log
+.DS_Store
+LICENSE
+tts
+home-assistant_v2.db-shm

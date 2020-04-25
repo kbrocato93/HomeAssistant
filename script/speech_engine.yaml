@@ -1,0 +1,10 @@
+speech_engine:
+  sequence:
+    - condition: state
+      entity_id: group.people
+      state: 'home'
+
+    - service: script.speech_processing
+      entity_id: media_player.bedroom_display
+      data_template:
+        speech_message: !include ../templates/speech/briefing.yaml

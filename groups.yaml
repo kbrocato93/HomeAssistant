@@ -1,0 +1,34 @@
+kitchen_lights:
+  name: Kitchen Lights
+  entities:
+    - light.kitchen_1
+    - light.kitchen_2
+    - light.kitchen_lightstrip
+bedroom_lights:
+  name: Bedroom Lights
+  entities:
+    - light.nightstand
+    - light.kitchen_ambient_light
+    - light.bedroom_ambient_light
+hallway_lights:
+  name: Hallway Lights
+  entities:
+    - light.hallway
+    - light.hallway_2
+all_lights:
+  name: All Lights
+  entities:
+    - light.lightstrip
+    - light.bedroom_ambient_light
+    - light.hallway
+    - light.hallway_2
+    - light.nightstand
+    - light.kitchen_ambient_light
+    - light.kitchen_1
+    - light.kitchen_2
+    - light.kitchen_lightstrip
+people:
+  name: Spencer and Kyle
+  entities:
+    - device_tracker.iphone
+    - device_tracker.sm_g973u

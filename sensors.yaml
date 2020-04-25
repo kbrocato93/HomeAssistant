@@ -1,0 +1,48 @@
+- platform: darksky
+  api_key: aaa9ace222c860c39fb4ef5cc5c4811e
+  monitored_conditions:
+    - summary
+    - icon
+    - temperature
+    - apparent_temperature
+    - humidity
+    - minutely_summary
+    - hourly_summary
+    - daily_summary
+    - temperature_high
+    - temperature_low
+    - alerts
+
+- platform: command_line
+  name: Unraid Version
+  command: /usr/bin/curl --insecure "https://s3.amazonaws.com/dnld.lime-technology.com/stable/unRAIDServer.plg" 2>&1 | grep Version |awk '{print $3}'
+
+
+  ## API sensors
+
+- platform: template
+  sensors:
+    unraid_array_status:
+      friendly_name: UnRAID Array Status
+      value_template: >
+        {{state_attr("binary_sensor.tower_server", "arrayStatus")}}
+    unraid_array_protection:
+      friendly_name: UnRAID Array Protection
+      value_template: >
+        {{state_attr("binary_sensor.tower_server", "arrayProtection")}}
+    unraid_array_space:
+      friendly_name: UnRAID Array Space
+      value_template: >
+        {% set state = state_attr("binary_sensor.tower_server", "diskSpace") %}
+        {{ Offline if state == None else state | regex_findall_index(".*\((\d+.?\d+) %\)") | float }}
+      unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+    harmony_activity:
+      value_template: >
+        {% if is_state("remote.harmony_hub_2", 'on') %}
+          {{ states.remote.harmony_hub_2.attributes.current_activity }}
+        {% else %}
+          PowerOff
+        {% endif %}

@@ -1,0 +1,57 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/rooms.html
+
+ rooms:
+   - name: Bedroom
+     icon: fas:bed
+     light: group.bedroom_lights
+     temperature: sensor.bedroom_temperature
+#     climate: climate.hallway_climate
+     humidity: sensor.bedroom_humidity
+#     motion: binary_sensor.hallway_sensor_motion
+#     door: binary_sensor.hallway_door_contact
+#     window: binary_sensor.hallway_window_contact
+#     vacuum:
+#       entity: vacuum.rockrobo
+#       camera: camera.rockrobo_map
+#     plant: plant.hallway_plant
+#     media_player: media_player.awesome_hallway_tv
+     page_entities:
+       entities:
+         - entity: fan.bedroom
+         - entity: switch.humidifier
+   - name: Hallway
+     icon: fas:key
+     light: group.hallway_lights
+     door: binary_sensor.wyzesense_778e1096
+     motion: binary_sensor.wyzesense_778dc370
+#     addons:
+#       - name: Hello room
+#         icon: fas:puzzle-piece
+#         path: 'dwains-theme/addons/rooms/hello-room/page.yaml'
+#         button_path: 'dwains-theme/addons/rooms/hello-room/button.yaml'
+#         data:
+#           some_data: 'This is some data parsed.'
+#           some_other_data: 'and some other data.'
+#           entity: vacuum.roborock
+   - name: Kitchen
+     icon: fas:utensils
+     light: group.kitchen_lights
+#     more_entities:
+#       columns: 2 #optional
+#       entities:
+#         - entity: sensor.name1
+#         - entity: sensor.name2
+     page_entities:
+       entities:
+         - entity: media_player.bedroom_display
+#         - entity: sensor.name2
+   - name: Living room
+     icon: fas:couch
+     light: light.lightstrip
+
+   - name: Server Montitoring
+     icon: mdi:server-network
+     addons:
+       - name: Unraid
+         icon: mdi:server-network
+         path: 'dwains-theme/addons/more_page/unraid_addon/unraid_monitoring.yaml'

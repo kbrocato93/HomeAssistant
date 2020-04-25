@@ -1,0 +1,11 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/house_information.html
+
+house_information:
+   favorites:
+     - entity: binary_sensor.wyzesense_778e1096
+       icon_on: fas:door-open
+       icon_off: fas:door-closed
+
+   calendar:
+     - calendar.kylevbrocato_gmail_com
+     - calendar.holidays_in_united_states

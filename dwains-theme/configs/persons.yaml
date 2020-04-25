@@ -1,0 +1,29 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/persons.html
+
+ persons:
+   - name: Kyle
+     track: person.kyle_brocato
+     picture_path: 'images/persons/kyle.jpg'
+#     more_entities:
+#       columns: 1 #optional
+#       entities:
+#         - entity: sensor.steps
+#         - entity: sensor.steps
+     page_entities:
+       columns: 2 #optional
+       entities:
+         - entity: sensor.iphone_battery_level
+         - entity: sensor.iphone_geocoded_location
+   - name: Spencer
+     track: person.spencer
+     picture_path: 'images/persons/spencer.jpg'
+#     more_entities:
+#       columns: 1 #optional
+#       entities:
+#         - entity: sensor.steps
+#         - entity: sensor.steps
+     page_entities:
+       columns: 2 #optional
+       entities:
+         - entity: sensor.sm_g973u_battery_level
+         - entity: sensor.sm_g973u_geocoded_location

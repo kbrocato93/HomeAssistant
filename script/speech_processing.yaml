@@ -1,0 +1,20 @@
+speech_processing:
+  sequence:
+    - condition: state
+      entity_id: group.people
+      state: 'home'
+#       - condition: time
+#         after: '08:00:00'
+#         before: '22:00:00'
+
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.bedroom_display
+        volume_level: 0.9
+
+    - service: tts.google_say
+      entity_id: media_player.bedroom_display
+      data_template:
+        message: >-
+            {{ speech_message }}
+        cache: true

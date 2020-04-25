@@ -1,0 +1,36 @@
+#################################################################
+## Motion Automations
+#################################################################
+
+        ##########################################################
+        ## Turn on Living Room Lights when Motion Detected at Night
+        ##########################################################
+
+- alias: Motion - Turn on Living Room Lights when Motion Detected at Night
+
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.wyzesense_778dc370
+      from: 'off'
+      to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: group.kitchen_lights
+      state: 'off'
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+    - condition: time
+      after: '07:00'
+      before: '02:00'
+
+  action:
+    - service: light.turn_on
+      entity_id:
+        - light.lightstrip
+        - light.kitchen_lightstrip
+      data:
+        transition: 5
+        brightness_pct: 50
+        color_temp: 447

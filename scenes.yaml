@@ -1,0 +1,555 @@
+- id: '1583819543835'
+  name: Chill Night
+  entities:
+    light.bedroom_ambient_light:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (R)
+      hs_color:
+      - 210.857
+      - 54.902
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 114
+      - 183
+      - 255
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.195
+      - 0.232
+    light.hallway:
+      brightness: 215
+      color_temp: 153
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hallway
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.hallway_2:
+      brightness: 23
+      color_temp: 111
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Hallway 2
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.kitchen_1:
+      brightness: 255
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 1
+      hs_color:
+      - 278.65
+      - 100
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 164
+      - 0
+      - 255
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.264
+      - 0.099
+    light.kitchen_2:
+      brightness: 181
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 2
+      hs_color:
+      - 271.009
+      - 100
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 131
+      - 0
+      - 255
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.222
+      - 0.079
+    light.kitchen_ambient_light:
+      brightness: 192
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (L)
+      hs_color:
+      - 7.654
+      - 95.294
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 42
+      - 12
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.687
+      - 0.308
+    light.kitchen_lightstrip:
+      brightness: 255
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Kitchen Lightstrip '
+      hs_color:
+      - 309.995
+      - 100
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 255
+      - 0
+      - 212
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.444
+      - 0.182
+    light.lightstrip:
+      brightness: 223
+      color_temp: 331
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Lightstrip
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.nightstand:
+      brightness: 189
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Nightstand '
+      hs_color:
+      - 2.181
+      - 100
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 255
+      - 9
+      - 0
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.699
+      - 0.3
+- id: '1585457921807'
+  name: Concentrate
+  entities:
+    light.bedroom_ambient_light:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (R)
+      hs_color:
+      - 44.211
+      - 22.353
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 240
+      - 197
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.371
+      - 0.373
+    light.hallway:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hallway
+      hs_color:
+      - 44.211
+      - 22.353
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 240
+      - 197
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.371
+      - 0.373
+    light.kitchen_1:
+      brightness: 255
+      color_temp: 153
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 1
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.kitchen_2:
+      brightness: 255
+      color_temp: 153
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 2
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.kitchen_ambient_light:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (L)
+      hs_color:
+      - 44.211
+      - 22.353
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 240
+      - 197
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.371
+      - 0.373
+    light.kitchen_lightstrip:
+      brightness: 255
+      color_temp: 153
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Kitchen Lightstrip '
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.lightstrip:
+      brightness: 242
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Living room TV Lightstrip
+      hs_color:
+      - 44.211
+      - 22.353
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 240
+      - 197
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.371
+      - 0.373
+    light.nightstand:
+      brightness: 255
+      color_temp: 153
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Nightstand '
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+- id: '1586741846045'
+  name: 'Purple & Orange '
+  entities:
+    light.bedroom_ambient_light:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (R)
+      hs_color:
+      - 263.448
+      - 34.118
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 201
+      - 167
+      - 255
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.291
+      - 0.225
+    light.hallway:
+      brightness: 18
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hallway
+      hs_color:
+      - 27.458
+      - 69.412
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 159
+      - 77
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.542
+      - 0.385
+    light.hallway_2:
+      brightness: 23
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Hallway 2
+      hs_color:
+      - 55.998
+      - 100
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 255
+      - 237
+      - 0
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.466
+      - 0.498
+    light.kitchen_1:
+      brightness: 14
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 1
+      hs_color:
+      - 231.996
+      - 46
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 137
+      - 153
+      - 255
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.22
+      - 0.193
+    light.kitchen_2:
+      brightness: 109
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Kitchen 2
+      hs_color:
+      - 302.997
+      - 18
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 255
+      - 209
+      - 252
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.343
+      - 0.282
+    light.kitchen_ambient_light:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (L)
+      hs_color:
+      - 321.111
+      - 21.176
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 201
+      - 236
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.36
+      - 0.289
+    light.kitchen_lightstrip:
+      brightness: 12
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Kitchen Lightstrip '
+      hs_color:
+      - 302.997
+      - 18
+      max_mireds: 400
+      min_mireds: 111
+      rgb_color:
+      - 255
+      - 209
+      - 252
+      state: 'on'
+      supported_features: 55
+      xy_color:
+      - 0.343
+      - 0.282
+    light.lightstrip:
+      brightness: 254
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Living room TV Lightstrip
+      hs_color:
+      - 25.333
+      - 52.941
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 176
+      - 120
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.488
+      - 0.373
+- id: '1587366325413'
+  name: Late Night
+  entities:
+    light.bedroom_ambient_light:
+      brightness: 13
+      color_temp: 500
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (R)
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.hallway:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hallway
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.hallway_2:
+      brightness: 23
+      color_temp: 390
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: Hallway 2
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.kitchen_ambient_light:
+      brightness: 6
+      color_temp: 500
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Bedroom Ambient Light (L)
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.kitchen_lightstrip:
+      brightness: 12
+      color_temp: 397
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Kitchen Lightstrip '
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
+    light.lightstrip:
+      brightness: 18
+      color_temp: 500
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Living room TV Lightstrip
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.nightstand:
+      brightness: 4
+      color_temp: 400
+      effect_list:
+      - effect_colorloop
+      - effect_pulse
+      - effect_stop
+      friendly_name: 'Nightstand '
+      max_mireds: 400
+      min_mireds: 111
+      state: 'on'
+      supported_features: 55
