@@ -1,9 +1,5 @@
-http:
-  base_url: 192.168.0.108:8123
-
 tts:
   - platform: google_translate
-    base_url: http://192.168.0.108:8123
     service_name: google_say
 
 default_config:
@@ -39,12 +35,6 @@ input_boolean:
     name: Speech Notifications
     icon: mdi:speaker-wireless
     initial: on
-
-input_text:
-  card_containers:
-    initial: Containers
-  software_version:
-    initial: Version
 
 weather:
   - platform: darksky
